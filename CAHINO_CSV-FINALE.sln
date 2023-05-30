@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAHINO_CSV-FINALE", "CAHINO_CSV-FINALE\CAHINO_CSV-FINALE.csproj", "{29DA2112-28DB-4270-B472-18AC9194C44E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29DA2112-28DB-4270-B472-18AC9194C44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29DA2112-28DB-4270-B472-18AC9194C44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29DA2112-28DB-4270-B472-18AC9194C44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29DA2112-28DB-4270-B472-18AC9194C44E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4D4E088-7668-49B1-8DC8-D3B59901F895}
+	EndGlobalSection
+EndGlobal
