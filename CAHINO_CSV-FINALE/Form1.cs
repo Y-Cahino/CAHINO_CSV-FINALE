@@ -12,6 +12,12 @@ namespace CAHINO_CSV_FINALE
 {
     public partial class Form1 : Form
     {
+        funzioni f;
+        string filename;
+        string filename1;
+        char delim;
+        public int dim;
+
         public Form1()
         {
             InitializeComponent();
