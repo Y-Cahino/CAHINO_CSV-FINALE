@@ -62,4 +62,36 @@ namespace CAHINO_CSV_FINALE
         }
         sr.Close();
     }
+    public void canc(string filename, char delim, string x, string reg)
+    {
+        StreamReader sr = new StreamReader(filename);
+        StreamWriter sw = new StreamWriter(@"temp.csv");
+        int i = 0;
+        string s;
+        while ((s = sr.ReadLine()) != null)
+        {
+            if (i != 0)
+            {
+                string[] split = s.Split(delim);
+                if (split[2] == x && split[1] == reg)
+                {
+                    split[10] = "false";
+                    for (int j = 0; j < split.Length; j++)
+                    {
+                        if (j == split.Length - 1) s = split[j];
+                        else s = split[j] + delim;
+                    }
+                }
+                sw.WriteLine(s);
+            }
+            i++;
+        }
+        sr.Close();
+        sw.Close();
+        File.Replace(@"temp", filename, @"backup.csv");
+        File.Delete(@"backup.csv");
+    }
 }
+}
+}
+
