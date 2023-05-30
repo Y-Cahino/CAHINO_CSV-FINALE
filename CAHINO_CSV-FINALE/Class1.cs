@@ -91,7 +91,13 @@ namespace CAHINO_CSV_FINALE
         File.Replace(@"temp", filename, @"backup.csv");
         File.Delete(@"backup.csv");
     }
-}
-}
+    public int Colonne(string filename, char delim)
+    {
+        StreamReader sr = new StreamReader(filename);
+        string s = sr.ReadLine();
+        sr.Close();
+        return s.Split(delim).Length;
+    }
+
 }
 
