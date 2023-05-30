@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CAHINO_CSV_FINALE
 {
-    public class funzioni
+    internal class funzioni
     {
         public void RandeLog(string filename, string filename1, char delim)
         {
@@ -91,7 +91,7 @@ namespace CAHINO_CSV_FINALE
         File.Replace(@"temp", filename, @"backup.csv");
         File.Delete(@"backup.csv");
     }
-    public int Colonne(string filename, char delim)
+    public int col(string filename, char delim)
     {
         StreamReader sr = new StreamReader(filename);
         string s = sr.ReadLine();
